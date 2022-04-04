@@ -18,7 +18,6 @@ def send_email(to: str, subject: str, plain_txt_content: str, html_content: str)
                         """,
                         subtype='html')
 
-
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-        smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
-        smtp.send_message(msg)
+            smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+            smtp.send_message(msg)
