@@ -8,7 +8,7 @@ def send_email(to: str, subject: str, plain_txt_content: str, html_content: str)
 
     msg = EmailMessage()
     msg['Subject'] = subject
-    msg['From'] = 'facufacyproductor@gmail.com'
+    msg['From'] = EMAIL_ADDRESS
     msg['To'] = to
 
     msg.set_content(plain_txt_content)
