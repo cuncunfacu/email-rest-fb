@@ -18,15 +18,11 @@ def test():
     
     try:
         html_content = render_template(template, ctx=request.json['context'])
-    except Exception as e:
-        return jsonify({"Error": e.__str__()})
-
-
-    try:
         send_email(to=to, subject=email_subject, plain_txt_content="hola", html_content=html_content)
+    
     except Exception as e:
         return jsonify({"Error": e.__str__()})
-    
+
     return jsonify(
         {
             "message": "email sent!",
