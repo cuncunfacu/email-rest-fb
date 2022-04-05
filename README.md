@@ -5,11 +5,11 @@ Send email (GMAIL SMPT) via REST API.
 HTML files using Jinja2 syntax can be used to define email templates.
 
 ## Example:
-Gmail access credentials where be provided as environment variables and html a test html template was stored in the `html_templates` directory.
+Gmail access credentials where be provided as environment variables and a `test.html` template was stored in the `html_templates` directory.
 
 ### POSTMAN REQUEST:
 By making a POST REQUEST to the `/send` endpoint, an email is sent according to the request’s body.
-With the above image, you can see the request and response made by the instance of the service running
+In the image below, you can see the request and response made by the instance of the service running
 ![Postman request example](https://firebasestorage.googleapis.com/v0/b/portfolio22-38a55.appspot.com/o/postman1.png?alt=media&token=89f05a3a-0af5-4e02-bac7-bc6c16a45544)
 
 ### EMAIL RECEPTION
